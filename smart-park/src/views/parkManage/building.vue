@@ -5,10 +5,10 @@
         <el-form>
           <el-form-item label="楼宇名称">
             <el-input v-model="name" placeholder="请输入楼宇名称" size="small" style="width: 400px;" clearable />
-            <el-button type="primary" size="small" style="margin-left: 20px;" @click="search">查询</el-button>
+            <el-button type="primary" style="margin-left: 20px;" @click="search">查询</el-button>
           </el-form-item>
         </el-form>
-        <el-button type="primary" size="small" @click="addBuilding">添加楼宇</el-button>
+        <el-button type="primary" @click="addBuilding">添加楼宇</el-button>
         <el-table :data="buildingList.rows">
           <el-table-column type="index" :index="getIndex" label="序号" />
           <el-table-column prop="name" label="楼宇名称" />
@@ -66,7 +66,7 @@ export default {
   },
   computed: {
     getIndex() {
-      return (index) => {
+      return index => {
         return (this.params.page - 1) * this.params.pageSize + index + 1
       }
     }

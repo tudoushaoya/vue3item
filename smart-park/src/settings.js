@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: '黑马智数',
+  title: '智慧园区',
 
   /**
    * @type {boolean} true | false

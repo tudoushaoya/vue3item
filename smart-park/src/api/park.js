@@ -4,6 +4,7 @@ import request from '@/utils/request'
 export const getBuildList = (params) => {
   return request({
     url: '/park/building',
+    method: 'GET',
     params
   })
 }
@@ -11,7 +12,8 @@ export const getBuildList = (params) => {
 // 楼宇详情查询
 export const getBuildDetail = (id) => {
   return request({
-    url: `/park/building/${id}`
+    url: `/park/building/${id}`,
+    method: 'GET'
   })
 }
 
@@ -19,7 +21,7 @@ export const getBuildDetail = (id) => {
 export const updateBuild = (data) => {
   return request({
     url: `/park/building`,
-    method: 'put',
+    method: 'PUT',
     data
   })
 }
@@ -28,7 +30,7 @@ export const updateBuild = (data) => {
 export const addBuild = (data) => {
   return request({
     url: `/park/building`,
-    method: 'post',
+    method: 'POST',
     data
   })
 }
@@ -37,7 +39,15 @@ export const addBuild = (data) => {
 export const deleteBuild = (id) => {
   return request({
     url: `/park/building/${id}`,
-    method: 'delete'
+    method: 'DELETE'
   })
 }
 
+// 企业列表查询
+export const getEnterpriseList = (params) => {
+  return request({
+    url: '/park/enterprise',
+    method: 'GET',
+    params
+  })
+}

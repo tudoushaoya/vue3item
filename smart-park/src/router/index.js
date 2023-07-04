@@ -63,34 +63,14 @@ export const constantRoutes = [
       {
         path: '/building',
         name: 'building',
-        component: () => import('@/views/Park/building'),
+        component: () => import('@/views/parkManage/building'),
         meta: { title: '楼宇管理' }
       },
       {
         path: '/enterprise',
         name: 'enterprise',
-        component: () => import('@/views/Park/enterprise'),
+        component: () => import('@/views/parkManage/enterprise'),
         meta: { title: '企业管理' }
-      }
-    ]
-  },
-
-  {
-    path: '/driving',
-    component: Layout,
-    meta: { title: '行车管理', icon: 'el-icon-collection' },
-    children: [
-      {
-        path: '/area',
-        name: 'area',
-        component: () => import('@/views/driving/area'),
-        meta: { title: '区域管理' }
-      },
-      {
-        path: '/month-card',
-        name: 'month-card',
-        component: () => import('@/views/driving/MonthlyCard'),
-        meta: { title: '月卡管理' }
       }
     ]
   },
