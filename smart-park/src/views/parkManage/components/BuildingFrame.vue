@@ -69,7 +69,6 @@ export default {
   computed: {},
   watch: {},
   created() {
-    console.log(this.detailRow)
   },
   mounted() {},
   methods: {
@@ -102,6 +101,5 @@ export default {
 <style lang="scss" scoped>
 ::v-deep .el-dialog__body {
     padding: 30px 70px 0;
-
 }
 </style>

@@ -99,6 +99,7 @@ export default {
     },
     // 添加楼宇
     addBuilding() {
+      this.detailRow = {}
       this.isShow = true
       this.isEdit = false
     },
