@@ -21,7 +21,7 @@ const router = createRouter({
           component: () => import('@/views/dashboard/index.vue'),
           // 路由元信息
           meta: {
-            title: '数据看板',
+            title: '首页',
             icon: 'HomeOutlined'
           }
         }

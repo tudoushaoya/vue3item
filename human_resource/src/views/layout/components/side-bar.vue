@@ -19,13 +19,13 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-const router = useRouter()  // 获取路由实例
+const router = useRouter() // 获取路由实例
 // 计算属性-测算需要展示的路由的信息
 const routes = computed(() => {
   return router.options.routes.filter((item) => !item.hidden) // 找出所有的hidden为false的路由
 })
 const getMeta = (obj) => {
-  // 判断当前有没有子节点  
+  // 判断当前有没有子节点
   if (obj.children && obj.children.length) {
     // 如果有子节点 就读取 子节点中第一个的meta属性
     // meta- 路由的元信息-存储信息的地方
