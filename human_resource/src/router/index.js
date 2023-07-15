@@ -26,6 +26,23 @@ const router = createRouter({
           }
         }
       ]
+    },
+    {
+      path: '/',
+      redirect: '/role',
+      component: Layout,
+      // 子节点
+      children: [
+        {
+          path: '', // 二级路由的地址
+          component: () => import('@/views/role/index.vue'),
+          // 路由元信息
+          meta: {
+            title: '角色',
+            icon: 'MenuUnfoldOutlined'
+          }
+        }
+      ]
     }
   ]
 })

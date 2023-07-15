@@ -4,7 +4,7 @@ import { Message } from 'element-ui'
 // 基地址：https://api-hmzs.itheima.net/v1
 const service = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
-  baseURL: 'https://api-hmzs.itheima.net/api',
+  baseURL: 'https://api-hmzs.itheima.net/api8',
   // withCredentials: true, // send cookies when cross-domain requests
   timeout: 10000 // request timeout
 })

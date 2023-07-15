@@ -85,7 +85,6 @@ export default {
     align-items: flex-end;
     justify-content: center;
     padding: 0 100px;
-
   }
   .form {
     flex: 2;
